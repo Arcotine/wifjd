@@ -2,7 +2,7 @@ import './App.css';
 import Button from './components/CustomButtonComponent';
 
 function App() {
-  let audio = new Audio("/died.mp3")
+  let audio = new Audio(process.env.PUBLIC_URL + "/died.mp3")
 
   const start = () => {
     audio.play()
